@@ -81,7 +81,8 @@ public struct TeamPolicy: Equatable, Sendable {
         self.reviewAtOrAbove = reviewAtOrAbove
     }
 
-    /// What you get when you change nothing.
+    /// A policy mod built like the docs' first example, but with an empty block
+    /// list and no `.catch`: a check that throws or times out fails open.
     public static let none = TeamPolicy()
 
     /// The policy the article argues for.
